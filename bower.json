@@ -3,10 +3,10 @@
   "description": "",
   "main": "index.js",
   "authors": [
-    "Aaron Sinnott <aaronsnig@gmail.com>"
+    "david ruppe <>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/Code-Institute-Org/full_stack_solutions",
+  "homepage": "https://github.com/davidruppe/angular-todo",
   "ignore": [
     "**/.*",
     "node_modules",
