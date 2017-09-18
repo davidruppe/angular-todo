@@ -44,6 +44,7 @@ angular.module('RouteControllers', [])
         $scope.login = function() {
             UserAPIService.callAPI(URL + "accounts/api-token-auth/", $scope.loginUser).then(function(results) {
                 $scope.token = results.data.token;
+                alert("You have successfully Logged in to Angular Todo");
                 store.set('username', $scope.loginUser.username);
                 store.set('authToken', $scope.token);
             }).catch(function(err) {
@@ -52,7 +53,7 @@ angular.module('RouteControllers', [])
         }
 
         $scope.submitForm = function() {
-            if ($scope.loginForm.$valid) {
+            if ($scope.LoginForm.$valid) {
                 $scope.loginUser.username = $scope.user.username;
                 $scope.loginUser.password = $scope.user.password;
                 $scope.login();
@@ -76,7 +77,7 @@ angular.module('RouteControllers', [])
         $scope.submitForm = function() {
             if ($scope.todoForm.$valid) {
                 $scope.todo.username = $scope.username;
-                $scope.todos.push($scope.todo);
+                $scope.todo.push($scope.todo);
 
 
             TodoAPIService.createTodo(URL + "todo/", $scope.todo, $scope.authToken).then(function(results) {
