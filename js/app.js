@@ -22,6 +22,10 @@ angular.module('TodoApp').config(function($locationProvider, $routeProvider) {
 	.when('/accounts/login', {
 		templateUrl: 'templates/login.html',
 		controller: 'LoginController'
+	})
+	.when('/accounts/logout', {
+		templateUrl: 'templates/logout.html',
+		controller: 'LogoutController'
 	});
 
 });
