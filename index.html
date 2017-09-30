@@ -2,7 +2,7 @@
 <html ng-app="TodoApp">
 <head>
     <title>Angular Todo</title>
-    <base href="/angular-todo/"> <!-- needed for Angular HTML 5 mode -->
+    <base href="/"> <!-- needed for Angular HTML 5 mode -->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -24,23 +24,14 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
                 <li><a href="/todo">Todo</a></li>
-                <li><a href="/accounts/register">Register</a></li>
-                <li><a href="/accounts/login">Log In</a></li>
+                <li><a href="/accounts/register">Account</a></li>
             </ul>
-        </div> +
-
+        </div>
     </nav>
     <div ng-view>
     </div>
-    
     <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
     <script src="js/service.js"></script>
-    <script src='js/directive.js'></script>
 </body>
 </html>
-
-
-
-
-    <base href="/angular-todo/"> <!-- all paths will be relative to the angular-todo path in GitHub Pages -->
